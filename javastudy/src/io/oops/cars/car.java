@@ -1,11 +1,15 @@
 package io.oops.cars;
 
-public class car{
+public class car {
     String make;
-    String model;
+    public String model;
     int year;
     String color;
     double price;
+
+    public car(String model) {
+        this.model = model;
+    }
 
     public car() {
         make = "";
@@ -23,8 +27,12 @@ public class car{
         color = o.color;
     }
 
-    public car(String make, String model, int year, price, color) {
-        
+    public car(String make, String model, int year, double price, String color) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.price = price;
+        this.color = color;
     }
 
     public String getMake() {

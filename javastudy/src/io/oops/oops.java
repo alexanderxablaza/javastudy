@@ -2,6 +2,7 @@ package io.oops;
 
 import java.time.LocalDate;
 
+import io.oops.dice.dicerollers;
 import io.oops.human.human;
 
 public class oops {
@@ -21,5 +22,7 @@ public class oops {
         human hhh = new human(h);
         hhh.changename("New name");
         hhh.eat();
+        dicerollers d = new dicerollers();
+        d.roll();
     }
 }
