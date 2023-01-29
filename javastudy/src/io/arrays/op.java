@@ -1,8 +1,13 @@
 package io.arrays;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class op {
 
-    public static void main(String[] args) {
+    public static void xmain(String[] args) {
         int value1 = 1;
         int value2 = 2;
         System.out.println(value1 & value2);
@@ -25,27 +30,31 @@ public class op {
         }
     }
 
-    public static void m_ain(String[] args) {
-        int[] c = { 3, 5, 7 };
+    public static void main(String[] args) {
+        List<Integer> c = new ArrayList<Integer>(Arrays.asList(3, 5, 7));
+        Collections.sort(c, Collections.reverseOrder());
         int size = 0;
         String s = "";
-        for (int o = 0; o < c.length; o++) {
+        String temp = "";
+
+        for (int o = 0; o < c.size(); o++) {
             // System.out.println("o : " + o);
-            size = c[o] > size ? c[o] : size;
-            String temp = "";
+            size = c.get(o) > size ? c.get(o) : size;
 
             for (int i = 1; i <= size; i++) {
                 for (int j = 1; j <= size; j++) {
                     if (i == size || i == 1 || j == 1 || j == size) {
-                        s = s.replace(s, "#");
+                        s += "#";
                     } else {
-                        s = s.replace(s, " ");
+                        s += " ";
                     }
                 }
-                s = s.replace(s, "\n");
+                s += "\n";
             }
+
+            System.out.println(s);
         }
-        System.out.println(s);
+        // System.out.println(temp);
     }
 
     public static void maxin(String[] args) {
