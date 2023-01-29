@@ -15,6 +15,6 @@ public class objsasargs {
         friend f1 = new friend("Patrick");
         friend f2 = new friend("Pat");
 
-        System.out.println( friend.numofFriends);
+        friend.displayFriends();
     }
 }

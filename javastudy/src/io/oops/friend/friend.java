@@ -11,4 +11,7 @@ public class friend {
         this.name = name;
         ++numofFriends;
     }
+    public static void displayFriends() {
+        System.out.printf("you have %d number of friends!\n", numofFriends);
+    }
 }
