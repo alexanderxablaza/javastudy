@@ -5,6 +5,7 @@ public class meth {
         // method = block of codes
         hi("Jbor");
         int z = add(3, 2);
+        add(1,2,3);
         System.out.println(Integer.toString(z));
     }
 
@@ -15,6 +16,9 @@ public class meth {
 
     static int add(int x, int y) {
         return x + y;
+
+    }
+    static void add(int x, int y, int z) {
 
     }
 }
