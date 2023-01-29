@@ -2,6 +2,12 @@ package io.oops.inheritances;
 
 public class inheritances {
     public static void main(String[] args) {
+        dog d = new dog();
+        d.speak();
+        animal a = new animal();
+        a.speak();
+    }
+    public static void _main(String[] args) {
         car c = new car();
         bike b = new bike();
         c.go();
