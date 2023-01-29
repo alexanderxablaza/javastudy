@@ -2,6 +2,14 @@ package io.oops.inheritances;
 
 public class inheritances {
     public static void main(String[] args) {
+        superhero newhero = new superhero("Batman",69,"$$$$$");
+        System.out.println(newhero);
+        person normal = new person("Terry",12);
+        System.out.println(normal);
+        superhero hero2 = new superhero("superman", 32, "unkillable");
+        System.out.println(hero2);
+    }
+    public static void m_ain(String[] args) {
         dog d = new dog();
         d.speak();
         animal a = new animal();
