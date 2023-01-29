@@ -7,13 +7,17 @@ public class human {
     String name;
     public int age;
     double weight;
-    LocalDate dob;
+    public LocalDate dob;
 
     static int nextId;
     static {
         nextId = 0;
     }
     public int id;
+
+    public final void changename(String newname) {
+        this.name = newname;
+    }
 
     public human() {
         name = "";
@@ -40,5 +44,18 @@ public class human {
         this.dob = dob;
         age = calculateAge(dob);
         this.weight = weight;
+        this.name = name;
+    }
+
+    public human(human o) {
+        id = ++nextId;
+        this.dob = o.dob;
+        age = o.age <= 0 ? o.age : calculateAge(o.dob);
+        this.weight = o.weight;
+        this.name = o.name;
+    }
+
+    public void eat() {
+        System.out.printf("%s is eating\n", this.name);
     }
 }
